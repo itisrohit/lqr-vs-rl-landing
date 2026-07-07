@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+*.whl
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# ML / training artifacts
+*.zip
+*.pth
+*.pt
+*.onnx
+logs/
+runs/
+tb_logs/
+wandb/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Node / frontend
+node_modules/
+package-lock.json
+
+# Build output (Vite, webpack, etc.)
+dist/
+build/
+
+# IDE / editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment / secrets
+.env.local
+.env.*.local
