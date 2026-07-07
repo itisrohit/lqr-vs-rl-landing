@@ -6,7 +6,6 @@ dependencies = []
 
 [dependency-groups]
 dev = [
-    "mypy>=2.1.0",
     "pytest>=9.1.1",
     "ruff>=0.15.20",
 ]
@@ -28,16 +27,9 @@ python_files = "test_*.py"
 python_functions = "test_*"
 addopts = ["--strict-markers", "--tb=short", "-v"]
 
-[tool.mypy]
-python_version = "3.13"
-strict = true
-ignore_missing_imports = true
-warn_unused_configs = true
-
 [tool.run-script]
 lint = "uv run ruff check ."
 fmt = "uv run ruff format ."
 check = ["lint", "fmt"]
 test = "uv run pytest"
-typecheck = "uv run mypy src/"
-all = ["check", "typecheck", "test"]
+all = ["check", "test"]

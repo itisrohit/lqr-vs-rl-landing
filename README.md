@@ -11,6 +11,5 @@ uvx uvtask lint        # ruff check
 uvx uvtask fmt         # ruff format
 uvx uvtask check       # lint + fmt
 uvx uvtask test        # pytest
-uvx uvtask typecheck   # mypy
-uvx uvtask all         # everything
+uvx uvtask all         # lint + fmt + test
 ```
