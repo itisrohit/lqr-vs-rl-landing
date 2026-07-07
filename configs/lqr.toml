@@ -1,0 +1,10 @@
+[lqr]
+Q_position = [1.0, 1.0, 1.0]
+Q_velocity = [10.0, 10.0, 10.0]
+Q_attitude = [100.0, 100.0, 100.0]
+Q_angular_velocity = [10.0, 10.0, 10.0]
+R_throttle = 0.01
+R_gimbal = [0.1, 0.1]
+
+[controller]
+hover_altitude = 50.0

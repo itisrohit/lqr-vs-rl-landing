@@ -1,0 +1,7 @@
+[wind]
+enabled = true
+profile = "exponential"  # exponential, constant, shear
+speed_ref = 5.0          # m/s at reference altitude
+altitude_ref = 100.0     # reference altitude for wind model
+gust_intensity = 2.0     # std dev of gust component
+direction = [1.0, 0.0, 0.0]  # (x, y, z) unit vector
