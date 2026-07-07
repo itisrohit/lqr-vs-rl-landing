@@ -12,4 +12,13 @@ uvx uvtask fmt         # ruff format
 uvx uvtask check       # lint + fmt
 uvx uvtask test        # pytest
 uvx uvtask all         # lint + fmt + test
+
+uvx pre-commit run --all-files   # run all pre-commit hooks manually
+```
+
+## Setup
+
+```bash
+uv sync                         # install dependencies
+uvx pre-commit install          # enable pre-commit hooks (run on every commit)
 ```
