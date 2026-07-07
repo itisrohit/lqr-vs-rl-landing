@@ -33,3 +33,11 @@ python_version = "3.13"
 strict = true
 ignore_missing_imports = true
 warn_unused_configs = true
+
+[tool.run-script]
+lint = "uv run ruff check ."
+fmt = "uv run ruff format ."
+check = ["lint", "fmt"]
+test = "uv run pytest"
+typecheck = "uv run mypy src/"
+all = ["check", "typecheck", "test"]
